@@ -247,6 +247,7 @@ a.selected #twitter, #twitter:hover {
     padding:10px;
     margin-top:20px;
     float: left;
+    clear:both;
 }
 
 
