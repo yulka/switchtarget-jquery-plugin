@@ -23,7 +23,6 @@
                 speed           : 'slow'
             });
             $(".links-5").switchTarget();        
-            $(".links-6").switchTarget();        
             
             // display code
             $('.code').switchTarget({
@@ -157,12 +156,12 @@
     
     <div id="container">
         <h2>Example 5</h2>
-        <h6>You can use images to trigger a switch.</h6>
+        <h6>You can use images to trigger a switch and switch images on click.</h6>
         <div id="links-5">
-            <a href="#target5-1" class="links-5"><img src="img/free_for_job.png" width="128" height="128" alt="Free For Job"></a>
-            <a href="#target5-2" class="links-5"><img src="img/portfolio.png" width="128" height="128" alt="Portfolio"></a>
-            <a href="#target5-3" class="links-5"><img src="img/post_note.png" width="128" height="128" alt="Post Note"></a>
-            <a href="#target5-4" class="links-5"><img src="img/twitter.png" width="128" height="128" alt="Twitter"></a>
+            <a href="#target5-1" class="links-5"><span id="free-for-job">1</span></a>
+            <a href="#target5-2" class="links-5"><span id="portfolio">2</span></a>
+            <a href="#target5-3" class="links-5"><span id="post-note">3</span></a>
+            <a href="#target5-4" class="links-5"><span id="twitter">4</span></a>
         </div>
        
         <div id="target5-1">Free For Job</div>
@@ -176,35 +175,9 @@
     </div>
     <div class="codeblock" id="ex5">
         <code>
-            $(".links-2").switchTarget();
+            $(".links-5").switchTarget();
         </code>
     </div>
-
-    <div id="container">
-        <h2>Example 6</h2>
-        <h6>You can use images to trigger a switch and the change the images on switch.</h6>
-        <div id="links-6">
-            <a href="#target6-1" class="links-6" id="free-for-job">Free For Job</a>
-            <a href="#target6-2" class="links-6" id="portfolio">Portfolio</a>
-            <a href="#target6-3" class="links-6" id="post-note">Post Note</a>
-            <a href="#target6-4" class="links-6" id="twitter">Twitter</a>
-        </div>
-       
-        <div id="target6-1">Free For Job</div>
-        <div id="target6-2">Portfolio</div>
-        <div id="target6-3">Post Note</div>
-        <div id="target6-4">Twitter</div>
-                
-        <div class="view-code">
-            <a href="#ex6" class="code">View code</a>
-        </div>
-    </div>
-    <div class="codeblock" id="ex6">
-        <code>
-            $(".links-2").switchTarget();
-        </code>
-    </div>
-        
     <div class="spacer"></div>
 </body>
 </html>

@@ -175,46 +175,53 @@ a {
 }
 
 /* example 5 */
-.selected img {
-    border:2px solid #666;
-}
-
-#target5-1, #target5-2, #target5-3, #target5-4, #target5-5 {
-    float:left;
-    width:570px;
-    border-top:0;
-    padding:40px 10px;
-    background:#40b4c4;
-    color:#fff;
-}
-
-/* example 6 */
-a.links-6 {
-    display:inline-block;
+a.links-5 {
+    display:block;
     width:128px;
     height:128px;
     text-indent:-9999px;
+    float:left;
 }
-a#free-for-job {
+
+#free-for-job, #portfolio, #post-note, #twitter {
+    display:block;
+    width:128px;
+    height:128px;    
+}
+
+#free-for-job {
+    background:url(../img/free_for_job-inactive.png) no-repeat;
+}
+
+a.selected #free-for-job, #free-for-job:hover {
     background:url(../img/free_for_job.png) no-repeat;
 }
-a#portfolio {
+
+#portfolio {
+    background:url(../img/portfolio-inactive.png) no-repeat;
+}
+
+a.selected #portfolio, #portfolio:hover {
     background:url(../img/portfolio.png) no-repeat;
 }
 
-a#post-note {
+#post-note {
+    background:url(../img/post_note-inactive.png) no-repeat;
+}
+
+a.selected #post-note, #post-note:hover {
     background:url(../img/post_note.png) no-repeat;
 }
 
-a#twitter {
+#twitter {
+    background:url(../img/twitter-inactive.png) no-repeat;
+}
+
+a.selected #twitter, #twitter:hover {
     background:url(../img/twitter.png) no-repeat;
 }
 
-#links-6 a.selected {
-    background:url(../img/report.png) no-repeat;
-}
-
-#target6-1, #target6-2, #target6-3, #target6-4, #target6-5 {
+#target5-1, #target5-2, #target5-3, #target5-4 {
     float:left;
     width:570px;
     border-top:0;
@@ -222,6 +229,7 @@ a#twitter {
     background:#40b4c4;
     color:#fff;
 }
+
 
 /* code styles */
 .codeblock {
