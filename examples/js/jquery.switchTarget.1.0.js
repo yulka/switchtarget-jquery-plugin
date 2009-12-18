@@ -29,13 +29,12 @@
 
             $e.click(function () {
                 if ($options.effect == 'sliding') {
-                    if ($($t).is(":visible")) {
+                    if ($($t).is(":visible")) {                        
                          $($t).slideUp($options.speed);
                      }
                      else {
-                         $(targets).not($t).slideUp($options.speed, function() {
-                             $($t).slideDown($options.speed);
-                         });
+                         $(targets).not($t).slideUp($options.speed);
+                         $t.slideDown($options.speed);
                      }
                 }
                 else {
