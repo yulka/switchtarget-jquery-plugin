@@ -13,7 +13,9 @@
             $(".links").switchTarget({
                 linkSelected    : 3
             });
-            $(".links-2").switchTarget();        
+            $(".links-2").switchTarget({
+                activation      : 'mouseover'
+            });        
             $(".links-3").switchTarget({
                 linkSwap       : true
             });
@@ -69,9 +71,7 @@
     
     <div id="container">
         <h2>Example 2</h2>
-        <h6>It can also be used for tab link functionality with non-conventional markup. The tabs 
-            do not have to be in the same container as the content. Such 
-            flexibility comes in handy for some layouts.</h6>
+        <h6>It can also be used for tab link functionality with non-conventional markup. The tabs do not have to be in the same container as the content. Such flexibility comes in handy for some layouts. This example also demonstrates the switch of the content on hover.</h6>
         <div id="links-2">
             <a href="#target2-1" class="links-2">1. Who?</a>
             <a href="#target2-2" class="links-2">2. Where?</a>
@@ -87,7 +87,11 @@
     </div>
     <div class="codeblock" id="ex2">
         <code>
-            $(".links-2").switchTarget();
+          $(function () {<br /> 
+              &nbsp;&nbsp;&nbsp;$(".links").switchTarget({<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;activation : 'mouseover'<br />
+              &nbsp;&nbsp;&nbsp;});<br />        
+          });
         </code>
     </div>
 
@@ -179,7 +183,9 @@
     </div>
     <div class="codeblock" id="ex5">
         <code>
-            $(".links-5").switchTarget();
+            $(function () {<br /> 
+                &nbsp;&nbsp;&nbsp;$(".links").switchTarget();<br />        
+            });
         </code>
     </div>
     <div class="spacer"></div>

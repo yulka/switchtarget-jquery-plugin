@@ -189,36 +189,16 @@ a.links-5 {
     height:128px;    
 }
 
-#free-for-job {
-    background:url(../img/free_for_job-inactive.png) no-repeat;
-}
+#free-for-job { background:url(../img/free-for-job.png) no-repeat top left; }
+#portfolio { background:url(../img/portfolio.png) no-repeat; }
+#post-note { background:url(../img/post-note.png) no-repeat; }
+#twitter { background:url(../img/twitter.png) no-repeat; }
 
-a.selected #free-for-job, #free-for-job:hover {
-    background:url(../img/free_for_job.png) no-repeat;
-}
-
-#portfolio {
-    background:url(../img/portfolio-inactive.png) no-repeat;
-}
-
-a.selected #portfolio, #portfolio:hover {
-    background:url(../img/portfolio.png) no-repeat;
-}
-
-#post-note {
-    background:url(../img/post_note-inactive.png) no-repeat;
-}
-
-a.selected #post-note, #post-note:hover {
-    background:url(../img/post_note.png) no-repeat;
-}
-
-#twitter {
-    background:url(../img/twitter-inactive.png) no-repeat;
-}
-
+a.selected #free-for-job, #free-for-job:hover,
+a.selected #portfolio, #portfolio:hover,
+a.selected #post-note, #post-note:hover,
 a.selected #twitter, #twitter:hover {
-    background:url(../img/twitter.png) no-repeat;
+    background-position: top right;
 }
 
 #target5-1, #target5-2, #target5-3, #target5-4 {
