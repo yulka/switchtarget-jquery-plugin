@@ -27,15 +27,18 @@
                 $t.hide();
             }
 
-            $e.click(function () {
+            $e.bind($options.activation, function() {
+                if ($options.activation == 'mouseover') {
+                    $e.click(function(){ return false; });
+                }  
                 if ($options.effect == 'sliding') {
                     if ($($t).is(":visible")) {                        
-                         $($t).slideUp($options.speed);
-                     }
-                     else {
-                         $(targets).not($t).slideUp($options.speed);
-                         $t.slideDown($options.speed);
-                     }
+                        $($t).slideUp($options.speed);
+                    }
+                    else {
+                        $(targets).not($t).slideUp($options.speed);
+                        $t.slideDown($options.speed);
+                    }
                 }
                 else {
                     $(targets).not($t).hide($options.speed);
@@ -54,9 +57,10 @@
         linkSelected    : 1,
         linkClass       : 'selected',
         linkSwap        : false,
-        effect          : 'basic', // alternative: sliding
+        effect          : 'basic', // alternative: 'sliding'
         speed           : '',
-        startHidden     : false
+        startHidden     : false,
+        activation      : 'click' // alternative: 'mouseover', 'dblclick'
     }
 
 })(jQuery);
