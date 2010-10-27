@@ -5,17 +5,17 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>switchTarget Plugin</title>
     <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
-    <script src="js/jquery.switchTarget.1.0.js" type="text/javascript"></script>
+    <script src="../src/jquery.switchTarget.1.0.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript">
-        $(function () { 
+        $(function () {
             // page examples
             $(".links").switchTarget({
                 linkSelected    : 3
             });
             $(".links-2").switchTarget({
                 activation      : 'mouseover'
-            });        
+            });
             $(".links-3").switchTarget({
                 linkSwap       : true
             });
@@ -24,14 +24,18 @@
                 startHidden     : true,
                 speed           : 'slow'
             });
-            $(".links-5").switchTarget();        
-            
+            $(".links-5").switchTarget({
+                activation      : 'mouseover',
+                effect          : 'fading',
+                speed           : 'slow'
+            });
+
             // display code
             $('.code').switchTarget({
                 effect          : 'sliding',
                 startHidden     : true,
                 speed           : 'slow'
-            });            
+            });
 
         });
     </script>
@@ -50,25 +54,25 @@
             <a href="#target-2" class="links">rizumu: cinco de mayo</a>
             <a href="#target-3" class="links">rizumu: oct 13 2007</a>
         </div>
-       
+
         <div id="target-1"><img src="img/08_rizumu_a_overview.png"  width="320px" alt="rizumu: aug 04 2007" /></div>
         <div id="target-2"><img src="img/05_rizumu_a_overview.png"  width="320px" alt="rizumu: cinco de mayo" /></div>
         <div id="target-3"><img src="img/10a_rizumu_a_overview.png"  width="320px" alt="rizumu: oct 13 2007" /></div>
-        
+
         <div class="view-code">
             <a href="#ex1" class="code">View code</a>
         </div>
     </div>
     <div class="codeblock" id="ex1">
         <code>
-            $(function () {<br /> 
+            $(function () {<br />
                 &nbsp;&nbsp;&nbsp;$(".links").switchTarget({<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linkSelected : 3<br />
-                &nbsp;&nbsp;&nbsp;});<br />        
+                &nbsp;&nbsp;&nbsp;});<br />
             });
         </code>
     </div>
-    
+
     <div id="container">
         <h2>Example 2</h2>
         <h6>It can also be used for tab link functionality with non-conventional markup. The tabs do not have to be in the same container as the content. Such flexibility comes in handy for some layouts. This example also demonstrates the switch of the content on hover.</h6>
@@ -87,10 +91,10 @@
     </div>
     <div class="codeblock" id="ex2">
         <code>
-          $(function () {<br /> 
+          $(function () {<br />
               &nbsp;&nbsp;&nbsp;$(".links").switchTarget({<br />
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;activation : 'mouseover'<br />
-              &nbsp;&nbsp;&nbsp;});<br />        
+              &nbsp;&nbsp;&nbsp;});<br />
           });
         </code>
     </div>
@@ -113,17 +117,17 @@
     </div>
     <div class="codeblock" id="ex3">
         <code>
-            $(function () {<br /> 
+            $(function () {<br />
                 &nbsp;&nbsp;&nbsp;$(".links").switchTarget({<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linkSwap : true<br />
-                &nbsp;&nbsp;&nbsp;});<br />        
+                &nbsp;&nbsp;&nbsp;});<br />
             });
         </code>
     </div>
-    
+
     <div id="container">
         <h2>Example 4</h2>
-        <h6>Yet another use case is as a simple accordion.</h6>    
+        <h6>Yet another use case is as a simple accordion.</h6>
         <ul id="accordion">
             <li>
                 <a href="#target4-1" class="links-4">What's your name?</a>
@@ -144,24 +148,24 @@
                 Playing with my Frisbee
             </li>
         </ul>
-        
+
         <div class="view-code">
             <a href="#ex4" class="code">View code</a>
         </div>
     </div>
     <div class="codeblock" id="ex4">
         <code>
-            $(function () {<br /> 
+            $(function () {<br />
                 &nbsp;&nbsp;&nbsp;$(".links").switchTarget({<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;effect : 'sliding',<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;startHidden : true,<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;speed : 'slow'<br />
-                &nbsp;&nbsp;&nbsp;});<br />        
+                &nbsp;&nbsp;&nbsp;});<br />
             });
         </code>
     </div>
-    
-    
+
+
     <div id="container">
         <h2>Example 5</h2>
         <h6>You can use images to trigger a switch and switch images on click.</h6>
@@ -171,20 +175,20 @@
             <a href="#target5-3" class="links-5"><span id="post-note">3</span></a>
             <a href="#target5-4" class="links-5"><span id="twitter">4</span></a>
         </div>
-       
+
         <div id="target5-1">Free For Job</div>
         <div id="target5-2">Portfolio</div>
         <div id="target5-3">Post Note</div>
         <div id="target5-4">Twitter</div>
-                
+
         <div class="view-code">
             <a href="#ex5" class="code">View code</a>
         </div>
     </div>
     <div class="codeblock" id="ex5">
         <code>
-            $(function () {<br /> 
-                &nbsp;&nbsp;&nbsp;$(".links").switchTarget();<br />        
+            $(function () {<br />
+                &nbsp;&nbsp;&nbsp;$(".links").switchTarget();<br />
             });
         </code>
     </div>

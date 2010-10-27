@@ -1,6 +1,6 @@
-switchTarget jQuery Plugin v1.0.0
+switchTarget jQuery Plugin v1.0.1
 ---------------------------------
-Copyright (c) 2009 Yulka Plekhanova. Licensed under the BSD license.
+Copyright (c) 20010 Yulka Plekhanova. Licensed under the BSD license.
 
 
 Overview
@@ -17,7 +17,7 @@ Use cases include:
 Usage
 ----------------
 
-$(function () { 
+$(function () {
     $('.switch).switchTarget();
 });
 
@@ -28,6 +28,6 @@ Default Options
 linkSelected    : 1,
 linkClass       : 'selected',
 linkSwap        : false,
-effect          : 'basic', // alternative: sliding
+effect          : 'basic', // alternative: sliding, fading
 speed           : '',
 startHidden     : false

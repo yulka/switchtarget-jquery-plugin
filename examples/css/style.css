@@ -13,7 +13,7 @@ h1 {
     padding:10px 20px;
     background:#fff;
     margin-bottom:5px;
-    color:#40b4c4;    
+    color:#40b4c4;
 }
 
 h2 {
@@ -77,7 +77,7 @@ a {
 #target-1, #target-2, #target-3 {
     float: left;
     width:320px;
-    height:190px;        
+    height:190px;
 }
 
 
@@ -123,7 +123,7 @@ a {
     float: left;
     width:60px;
     height:60px;
-    font-weight:bold;    
+    font-weight:bold;
 }
 
 #target3-1 {
@@ -181,12 +181,13 @@ a.links-5 {
     height:128px;
     text-indent:-9999px;
     float:left;
+    margin-bottom:235px;
 }
 
 #free-for-job, #portfolio, #post-note, #twitter {
     display:block;
     width:128px;
-    height:128px;    
+    height:128px;
 }
 
 #free-for-job { background:url(../img/free-for-job.png) no-repeat top left; }
@@ -209,8 +210,13 @@ a.selected #twitter, #twitter:hover {
     background:#40b4c4;
     color:#fff;
     margin-top:10px;
+    position:absolute;
+    top:235px;
 }
 
+#target5-2 { background:#ff9c08; }
+#target5-3 { background:#98be00; }
+#target5-4 { background:#f3b812; }
 
 /* code styles */
 .codeblock {

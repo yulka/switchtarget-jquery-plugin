@@ -40,6 +40,10 @@
                         $t.slideDown($options.speed);
                     }
                 }
+                if ($options.effect == 'fading') {
+                    $(targets).not($t).fadeOut($options.speed);
+                    $t.fadeIn($options.speed);
+                }
                 else {
                     $(targets).not($t).hide($options.speed);
                     $t.show($options.speed);
@@ -57,7 +61,7 @@
         linkSelected    : 1,
         linkClass       : 'selected',
         linkSwap        : false,
-        effect          : 'basic', // alternative: 'sliding'
+        effect          : 'basic', // alternative: 'sliding', 'fading'
         speed           : '',
         startHidden     : false,
         activation      : 'click' // alternative: 'mouseover', 'dblclick'
